@@ -14,4 +14,13 @@ Refleksi dari fungsi HTML, CSS, JAVASCRIPT termasuk GIT
 4. JavaScript
      adalah bahasa skrip untuk membuat halaman web yang interaktif di sisi pengguna.
 
-Sekian refleksi saya tentang HTML, CSS, dan Javascript. Ini sepenuhnya pengetahuan yang saya dapat dari praktikum yang saya kerjakan di 9/9/2026.
+Sekian refleksi saya tentang HTML, CSS, dan Javascript. Ini sepenuhnya pengetahuan yang saya dapat dari praktikum yang saya kerjakan di 09/09/2026.
+
+
+
+AI USE STATEMENT
+Saya menggunakan AI untuk menjelaskan error selector JavaScript.
+Saya memeriksa ID pada HTML, memperbaiki selector, lalu menguji
+tombol melalui browser dan Console. Tidak ada kredensial atau
+data pribadi yang dikirimkan.
+12/09/2026
