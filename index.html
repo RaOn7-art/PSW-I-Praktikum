@@ -43,21 +43,26 @@
       </fieldset>
       <label for="catatan">Catatan (opsional)</label>
       <textarea id="catatan" name="catatan" rows="4"
-                maxlength="300"></textarea></div>
+                maxlength="300"></textarea>
         <div><label>Jumlah Tiket</label></div>
         <input type="number" min="1" max="5" value="1" name="jumlah_tiket" required>
-      <fieldset><legend>Minat Topik</legend>
+      <fieldset>
+      <legend>Minat Topik</legend>
   <div>
     <label for="topik-html">HTML</label>
     <input type="checkbox" id="topik-html" name="topik" value="html">
     <label for="topik-css">CSS</label>
-    <input type="checkbox" id="topik-css" name="topik" value="css"></fieldset>
+    <input type="checkbox" id="topik-css" name="topik" value="css">
+      </fieldset>
+  </div>
     <fieldset><legend>Aksesibilitas</legend>
   <div>
-    <label for="topik-penerjemahan ke bahasa Jerman">Penerjemahan ke bahasa Jerman</label>
+    <label for="topik-aksesibilitas">Penerjemahan ke bahasa Jerman</label>
     <input type="checkbox" id="topik-aksesibilitas" name="topik" value="aksesibilitas">
-    <div><label for="topik-penerjemahan ke bahasa Inggris">Penerjemahan ke Bahasa Inggris</label>
-    <input type="checkbox" id="topik-penerjemahan ke bahasa inggris" name="topik" value="penejermahan ke bahasa inggris"></div></fieldset></div>
+    <div>
+    <label for="topik-aksesibilitas">Penerjemahan ke Bahasa Inggris</label>
+    <input type="checkbox" id="topik-aksesibilitas" name="topik" value="aksesibilitas"></div></fieldset>
+    </div>
         <div><button type="submit">Daftar</button></div>
   </form>
  </main>
