@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Halaman Pertama Saya</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <header>
+ <h1>Pendaftaran Kegiatan</h1>
+ </header>
+ <main>
+  <figure><img src="Images/Gunung-Fuji.jpg" alt="Gunung Fuji."></figure>
+    <h1>Kolom bertanda wajib harus diisi.</h1>
+  <form action="" method="get">
+      <label for="nama">Nama lengkap (wajib)</label>
+      <input id="nama" name="nama" autocomplete="name" required>
+      <label for="email">Email (wajib)</label>
+      <input id="email" name="email" type="email"
+             autocomplete="email" required>
+      <div>
+      <label for="phone">Nomor Telepon (wajib)</label>
+      <input id="phone" name="phone" type="phone">
+      </div>
+    <label for="prodi">Program studi (wajib)</label>
+      <select id="prodi" name="prodi" required>
+        <option value="">Pilih program studi</option>
+        <option value="trpl">D4 TRPL</option>
+        <option value="ti">D3 Teknologi Informasi</option>
+      </select>
+      <div><label for="kode">Kode peserta (6 angka, wajib)</label>
+        <input id="kode" name="kode" type="text"
+ inputmode="numeric" pattern="[0-9]{6}"
+ aria-describedby="kode-help" required></div>
+  <p id="kode-help">Contoh: 001234. Gunakan tepat enam angka.</p>
+      <fieldset>
+<legend>Mode kehadiran (wajib)</legend>
+      <input id="luring" name="mode" type="radio" value="luring" required>
+        <label for="luring">Luring</label>
+       <input id="daring" name="mode" type="radio" value="daring">
+        <label for="daring">Daring</label>
+      </fieldset>
+      <label for="catatan">Catatan (opsional)</label>
+      <textarea id="catatan" name="catatan" rows="4"
+                maxlength="300"></textarea></div>
+        <div><label>Jumlah Tiket</label></div>
+        <input type="number" min="1" max="5" value="1" name="jumlah_tiket" required>
+      <fieldset><legend>Minat Topik</legend>
+  <div>
+    <label for="topik-html">HTML</label>
+    <input type="checkbox" id="topik-html" name="topik" value="html">
+    <label for="topik-css">CSS</label>
+    <input type="checkbox" id="topik-css" name="topik" value="css"></fieldset>
+    <fieldset><legend>Aksesibilitas</legend>
+  <div>
+    <label for="topik-penerjemahan ke bahasa Jerman">Penerjemahan ke bahasa Jerman</label>
+    <input type="checkbox" id="topik-aksesibilitas" name="topik" value="aksesibilitas">
+    <div><label for="topik-penerjemahan ke bahasa Inggris">Penerjemahan ke Bahasa Inggris</label>
+    <input type="checkbox" id="topik-penerjemahan ke bahasa inggris" name="topik" value="penejermahan ke bahasa inggris"></div></fieldset></div>
+        <div><button type="submit">Daftar</button></div>
+  </form>
+ </main>
+ <script src="js/main.js"></script>
+</body>
+</html>
