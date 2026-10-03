@@ -13,7 +13,7 @@ header, main {
 }
 input:focus-visible, select:focus-visible,
 textarea:focus-visible, button:focus-visible {
- outline: 3px solid #175cd3;
+ outline: 3px solid #a30404;
  outline-offset: 3px;
 }
 h1 { color: #f6236d; }
