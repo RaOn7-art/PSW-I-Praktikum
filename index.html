@@ -1,27 +1,30 @@
+<!-- Nama: Nathalie Tampubolon -->
+<!-- NIM: 41426015 -->
+<!-- Program Studi: D4 TRPL -->
+
 <!doctype html>
 <html lang="id">
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Halaman Pertama Saya</title>
+ <title>Pendaftaran</title>
  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- <header>
- <h1>Pendaftaran Kegiatan</h1>
- </header>
+    <header><h1>Pendaftaran Kegiatan</h1></header>
+     <img src="images/Gunung-Fuji.jpg" alt="Stiker Dekorasi" class="stiker" width="800" height="400">
  <main>
-  <figure><img src="Images/Gunung-Fuji.jpg" alt="Gunung Fuji."></figure>
-    <h1>Kolom bertanda wajib harus diisi.</h1>
-  <form action="" method="get">
+  <h2>Kolom bertanda wajib harus diisi.</h2>
+
+  <form class="card" action="index.html" method="get">
       <label for="nama">Nama lengkap (wajib)</label>
       <input id="nama" name="nama" autocomplete="name" required>
-      <label for="email">Email (wajib)</label>
+      <div><label for="email">Email (wajib)</label>
       <input id="email" name="email" type="email"
-             autocomplete="email" required>
+             autocomplete="email" required></div>
       <div>
-      <label for="phone">Nomor Telepon (wajib)</label>
-      <input id="phone" name="phone" type="phone">
+      <label for="telepon">Nomor Telepon (wajib)</label>
+      <input id="telepon" name="telepon" type="tel" required>
       </div>
     <label for="prodi">Program studi (wajib)</label>
       <select id="prodi" name="prodi" required>
@@ -41,9 +44,6 @@
        <input id="daring" name="mode" type="radio" value="daring">
         <label for="daring">Daring</label>
       </fieldset>
-      <label for="catatan">Catatan (opsional)</label>
-      <textarea id="catatan" name="catatan" rows="4"
-                maxlength="300"></textarea>
         <div><label>Jumlah Tiket</label></div>
         <input type="number" min="1" max="5" value="1" name="jumlah_tiket" required>
       <fieldset>
@@ -53,19 +53,25 @@
     <input type="checkbox" id="topik-html" name="topik" value="html">
     <label for="topik-css">CSS</label>
     <input type="checkbox" id="topik-css" name="topik" value="css">
-      </fieldset>
   </div>
-    <fieldset><legend>Aksesibilitas</legend>
+      </fieldset>
   <div>
-    <label for="topik-aksesibilitas">Penerjemahan ke bahasa Jerman</label>
-    <input type="checkbox" id="topik-aksesibilitas" name="topik" value="aksesibilitas">
+    <fieldset>
+      <legend>Aksesibilitas</legend>
+    <label for="topik-Jerman">Penerjemahan ke bahasa Jerman</label>
+    <input type="checkbox" id="topik-Jerman" name="topik" value="Jerman">
     <div>
-    <label for="topik-aksesibilitas">Penerjemahan ke Bahasa Inggris</label>
-    <input type="checkbox" id="topik-aksesibilitas" name="topik" value="aksesibilitas"></div></fieldset>
-    </div>
-        <div><button type="submit">Daftar</button></div>
+    <label for="topik-Inggris">Penerjemahan ke Bahasa Inggris</label>
+    <input type="checkbox" id="topik-Inggris" name="topik" value="Inggris"></div>
+    </fieldset>
+  </div>
+  <label for="catatan">Catatan (opsional)</label>
+  <div><textarea id="catatan" name="catatan" rows="4"
+                maxlength="300"></textarea></div>
+      <div><button type="submit">Daftar</button></div>
   </form>
+  <link rel="stylesheet" href="style.css">
  </main>
- <script src="js/main.js"></script>
+ <script src="main.js"></script>
 </body>
 </html>
