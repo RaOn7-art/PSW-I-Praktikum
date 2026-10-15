@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --brand: #d20f39;
+    --space: 1rem;
+    --surface: white;
+    --ink: #243244;
+}
+
+body {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--ink);
+    background-image: url('Images/BACKGROUND.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: white;
+    border: 1px solid var(--brand);
+}
+
+main {
+    width: 90%;
+    max-width: 60rem;
+    margin-inline: auto;
+    padding: var(--space);
+    border: 2px solid var(--brand);
+    background: var(--surface);
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+    outline: 3px solid #be304f;
+    outline-offset: 3px;
+}
+
+.notice {
+    color: #fe2087;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid var(--brand);
+    outline-offset: 3px;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #f6236d;
+}
+
+p {
+    max-width: 65ch;
+}
+
+button {
+    padding: .75rem 1rem;
+    color: rgb(127, 0, 53);
+    background: #ff3b7f;
+    border: 0;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.card {
+    padding: var(--space-2, 1rem);
+    flex: 1 1 15rem;
+    padding: 1rem;
+    border: 1px solid rgb(185, 33, 83);
+    max-width: 100%;
+}
+
+.card h1,
+h2,
+.card p {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.card a {
+    align-self: start;
+}
+
+.catalog {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 767px) {
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: clamp(1.75rem, 1.2rem + 2vw, 3rem);
+}
+
+.card-wrap {
+    container-type: inline-size;
+}
+
+@container (min-width: 30rem) {
+    .card {
+        padding: 1.5rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        transition: none;
+    }
+}
