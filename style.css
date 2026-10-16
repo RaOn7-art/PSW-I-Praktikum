@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --brand: #d20f39;
+    --space: 1rem;
+    --surface: white;
+    --ink: #243244;
+}
+
+body {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--ink);
+    background-image: url('Images/BACKGROUND.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: white;
+    border: 1px solid var(--brand);
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    width: 90%;
+    max-width: 60rem;
+    margin-inline: auto;
+    padding: var(--space);
+    border: 2px solid var(--brand);
+    background: var(--surface);
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #f6236d;
+}
+
+p {
+    max-width: 65ch;
+}
+
+button {
+    padding: .75rem 1rem;
+    color: rgb(127, 0, 53);
+    background: #ff3b7f;
+    border: 0;
+    cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--brand);
+    outline-offset: 3px;
+}
+
+.notice {
+    color: #fe2087;
+}
+
+/* Navigasi */
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    list-style: none;
+    padding: 0;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+/* Card & Grid Catalog */
+.card {
+    padding: 1rem;
+    border: 1px solid rgb(185, 33, 83);
+    min-width: 0; /* Mencegah overflow pada grid items */
+}
+
+.card h1,
+.card h2,
+.card p {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.card a {
+    align-self: start;
+}
+
+.card img {
+    width: 900px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.catalog {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+/* Media Query (Breakpoint Konten) */
+@media (min-width: 48rem) {
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
